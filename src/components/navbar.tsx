@@ -22,9 +22,9 @@ const Navbar = () => {
                 {MenuItems.map((item, index) => {
                     return (
                         <li key={index}>
-                            <a className={item.cName} href={item.url}>
+                            <Link className={item.cName} to={item.url}>
                             <i className={item.icon}></
-                            i>{item.titre}</a>
+                            i>{item.titre}</Link>
                         </li>
                     )
                 })}

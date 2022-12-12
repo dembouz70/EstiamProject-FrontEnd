@@ -6,26 +6,26 @@ export const MenuItems = [
         icon : "fa-solid fa-house-chimney"
     },
     {
-        titre : "Services",
-        url : "/services",
+        titre : "Recettes",
+        url : "Recettes",
         cName : "nav-links",
         icon : "fa-solid fa-briefcase"
     },
     {
         titre : "A propos",
-        url : "/about",
+        url : "About",
         cName : "nav-links",
         icon : "fa-solid fa-circle"
     },
     {
         titre : "Contact",
-        url : "/contact",
+        url : "Contact",
         cName : "nav-links",
         icon : "fa-solid fa-address-book"
     },
     {
         titre : "Sign Up",
-        url : "/signup",
+        url : "/Signup",
         cName : "nav-links-mobile",
     }
 ]
