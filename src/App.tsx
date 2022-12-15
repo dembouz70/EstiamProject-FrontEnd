@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Banner from './components/Banner';
 import Navbar from './components/Navbar';
 import About from './routes/About';
 import Contact from './routes/Contact';
@@ -16,8 +17,6 @@ function App() {
         <Route path='Contact' element={<Contact/>}/>
         <Route path='/About' element={<About/>}/>
       </Routes>
-
-      <Navbar />
     </div>
   );
 }
