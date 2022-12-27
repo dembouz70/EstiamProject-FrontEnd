@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 import About from './routes/About';
 import Contact from './routes/Contact';
 import Home from './routes/Home';
-import Recettes from './routes/Recettes';
+import RecetteDetails from './routes/Recette-Details';
+import Recettes from './routes/RecettesList';
 import "./styles.css";
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='Recettes' element={<Recettes/>}/>
-        <Route path='Contact' element={<Contact/>}/>
+        <Route path='/Recettes' element={<Recettes/>}/>
+        <Route path='/Recettes/:id' element={<RecetteDetails/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
         <Route path='/About' element={<About/>}/>
       </Routes>
     </div>

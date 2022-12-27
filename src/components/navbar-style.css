@@ -113,7 +113,7 @@ button:hover{
         transition: none;
     }
 
-    button {
+    .NavbarItems button {
         display: none;
     }
 

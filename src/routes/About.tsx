@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const About = () => {
@@ -11,6 +12,7 @@ const About = () => {
                 cName = "banner-demi"
                 btnClass = "hide"
             />
+            <Footer />
         </>
     );
 }

@@ -1,5 +1,4 @@
 import "./Banner.css";
-import BannerImg from "./../assets/Banner.jpg";
 
 const Banner = (props:any) => {
     return ( 
