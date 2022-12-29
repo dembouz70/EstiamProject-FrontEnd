@@ -11,8 +11,8 @@ const RecetteDetails: FunctionComponent = () => {
     const { id } = useParams<{ id: string }>();
 
     useEffect(() => {
-        axios.get("http://localhost:5000/recettes").then((response) => {
-            const RECETTE = [response.data];
+        axios.get<Recette[]>("http://localhost:5000/recettes").then((response) => {
+            const RECETTE = response.data;
             
             RECETTE.forEach(r => {
                 if (id === r.id.toString()) {
