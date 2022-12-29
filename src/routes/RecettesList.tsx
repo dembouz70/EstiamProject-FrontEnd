@@ -1,17 +1,23 @@
 import { FunctionComponent, useEffect, useState } from "react";
 import Recette from "../models/recettes";
-import RECETTES from "../models/recette-mock";
 
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import RecettesCard from "../components/RecettesCard";
+import axios from "axios";
 
 const RecettesList: FunctionComponent = () => {
     const [recettes, setRecettes] = useState<Recette[]>([]);
     useEffect(() => {
-        setRecettes(RECETTES)
+        axios.get("http://localhost:5000/recettes").then((response) => {
+            setRecettes(response.data);
+        });
     }, [])
+
+    console.log(recettes)
+
+    
 
     return ( 
         <>

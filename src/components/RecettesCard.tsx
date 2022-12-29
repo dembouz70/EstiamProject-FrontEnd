@@ -13,13 +13,13 @@ const RecettesCard : FunctionComponent<Props> = ({recette}) => {
             <div className="r">
                 <div className="recettecard">
                     <Link to={`/Recettes/${recette.id}`}>
-                        <img src={recette.image} alt="Lago di Braies" />
+                        <img src="https://images.pexels.com/photos/14265377/pexels-photo-14265377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Lago di Braies" />
                     </Link>
                     <span className="tag">Nature</span>
                     <span className="tag">Lake</span>
-                    <div className="name">{recette.name}</div>
+                    <div className="name">{recette.titre}</div>
                     <p>
-                        {recette.text}
+                        {recette.description}
                     </p>
                 </div>
             </div>
