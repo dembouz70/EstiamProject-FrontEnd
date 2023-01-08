@@ -11,3 +11,19 @@
     font-family: sans-serif;
     text-align: center;
 }
+
+.divbtn {
+    float: left;
+}
+
+.btn {
+    margin: 3px 3px;
+}
+
+.card{
+    text-align :left;
+}
+
+.card h2{
+    text-align :center;
+}

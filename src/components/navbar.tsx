@@ -23,8 +23,7 @@ const Navbar = () => {
                     return (
                         <li key={index}>
                             <Link className={item.cName} to={item.url}>
-                            <i className={item.icon}></
-                            i>{item.titre}</Link>
+                            <i className={item.icon}></i>{item.titre}</Link>
                         </li>
                     )
                 })}

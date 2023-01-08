@@ -6,19 +6,18 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import RecettesCard from "../components/RecettesCard";
 import axios from "axios";
+import "../components/Search.css"
 
 const RecettesList: FunctionComponent = () => {
     const [recettes, setRecettes] = useState<Recette[]>([]);
+    const [query, setQuery] = useState("");
     useEffect(() => {
-        axios.get("http://localhost:5000/recettes").then((response) => {
+        axios.get("http://localhost:5000/recettes/recetteCatg").then((response) => {
             setRecettes(response.data);
         });
     }, [])
 
     console.log(recettes)
-
-    
-
     return ( 
         <>
             <Navbar />
@@ -28,8 +27,11 @@ const RecettesList: FunctionComponent = () => {
                     cName = "banner-demi"
                     btnClass = "hide"
                 />
+                <div className="appli">
+                    <input type="text" placeholder="rechercher..." className="search" onChange={(e) => setQuery(e.target.value)}/>
+                </div>
                 {
-                    recettes.map((r) =>
+                    recettes.filter(recette=>recette.titre.toLowerCase().includes(query)).map((r) =>
                     <RecettesCard
                         key={r.id}
                         recette = {r}

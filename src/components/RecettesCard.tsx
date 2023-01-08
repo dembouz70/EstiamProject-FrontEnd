@@ -15,8 +15,7 @@ const RecettesCard : FunctionComponent<Props> = ({recette}) => {
                     <Link to={`/Recettes/${recette.id}`}>
                         <img src="https://images.pexels.com/photos/14265377/pexels-photo-14265377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Lago di Braies" />
                     </Link>
-                    <span className="tag">Nature</span>
-                    <span className="tag">Lake</span>
+                    <span className="tag">{recette.category.titre_Cat}</span>
                     <div className="name">{recette.titre}</div>
                     <p>
                         {recette.description}
