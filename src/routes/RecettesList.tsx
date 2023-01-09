@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import RecettesCard from "../components/RecettesCard";
 import axios from "axios";
 import "../components/Search.css"
+import { Link } from "react-router-dom";
 
 const RecettesList: FunctionComponent = () => {
     const [recettes, setRecettes] = useState<Recette[]>([]);
@@ -27,6 +28,7 @@ const RecettesList: FunctionComponent = () => {
                     cName = "banner-demi"
                     btnClass = "hide"
                 />
+                
                 <div className="appli">
                     <input type="text" placeholder="rechercher..." className="search" onChange={(e) => setQuery(e.target.value)}/>
                 </div>
