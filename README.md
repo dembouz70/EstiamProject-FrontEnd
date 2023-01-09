@@ -16,7 +16,11 @@ Démarrage :
 Pour démarrer l'application, suivez ces étapes :
 
 1 - Assurez-vous que l'API est en cours d'exécution sur le port 5000. Pour démarrer l'API, accédez au répertoire de l'API avec la commande cd api et exécutez la commande npm run start:dev.
+
+
 2 - Dans un autre terminal, accédez au répertoire de l'application React avec la commande cd your-repo-name et exécutez la commande npm start. Cela démarrera l'application React sur le port 3000.
+
+
 3 - Ouvrez votre navigateur et accédez à l'URL http://localhost:3000 pour accéder à l'application.
 
 4-pour l'administration, accédez à l'URL http://localhost:3000/Admin/Recettes pour gerer les recettes (ajout , suppression...)
